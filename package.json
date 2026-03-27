@@ -1,0 +1,16 @@
+{
+  "name": "layout-template",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "create:page": "node scripts/create-page.js",
+    "create:component": "node scripts/create-component.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "sass": "^1.69.0"
+  }
+}
