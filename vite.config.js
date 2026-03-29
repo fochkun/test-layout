@@ -13,6 +13,7 @@ export default defineConfig({
         about: resolve(__dirname, 'src/pages/about.html'),
       },
     },
+    assetsDir: 'assets',
   },
   server: {
     open: '/pages/index.html',

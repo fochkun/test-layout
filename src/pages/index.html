@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход в личный кабинет</title>
   <script type="module" src="../main.js"></script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Layout Starter</h1>
-    <button class="btn btn--primary">Button</button>
+  <div class="login-screen" action="#" method="POST">
+    <h1 class="login-screen__title">Войти в личный кабинет</h1>
+
+    <div class="login-screen__image">
+      <img src="/images/login-image.jpg" alt="login image">
+    </div>
+
+    <div class="login-screen__form login-form">
+      <div class="login-form__input-group">
+        <div class="login-form__input-wrapper">
+          <input type="text" class="login-form__input" id="email" name="email" placeholder="Email/Телефон" required>
+          <div class="login-form__icon-wrapper round-icon">
+            <i class="fa-solid fa-info"></i>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="login-form__input-group">
+        <a href="#" class="login-form__link">Не удаётся войти?</a>
+        <div class="login-form__input-wrapper">
+          <input type="password" class="login-form__input" id="password" name="password" placeholder="Пароль"
+            required>
+            <div class="login-form__icon-wrapper">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+        </div>
+      </div>
+
+      <button type="submit" class="login-form__button">
+        <span>Войти</span>
+        <div class="login-form__button-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </button>
+
+    </div>
+
+    <div class="login-screen__footer">
+      <a href="#" class="login-screen__help" aria-label="Помощь">?</a>
+      <span class="login-screen__copyright">Copyright © 2024 SPBlink</span>
+    </div>
   </div>
 </body>
+
 </html>
